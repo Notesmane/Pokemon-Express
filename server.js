@@ -23,10 +23,29 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Pokemon App!')
 });
 
+// the GET Route
+/**
+ * @route /pokemon
+ * @method GET
+ * @action index
+ * @description returns a list of pokemon characters
+ */
 
 
+app.get('/pokemon', (req, res) => {
+    res.render('pokemon/Index', {
+       pokemon: pokemon 
+    });
+})
 
 
+// the GET Route
+/**
+ * @route /pokemon
+ * @method GET
+ * @action index
+ * @description returns a list of pokemon characters
+ */
 
 
 
