@@ -6,7 +6,6 @@
 
 const express = require('express');
 
-
 const app = express();
 const PORT = 3000;
 
@@ -31,13 +30,11 @@ app.get('/', (req, res) => {
  * @description returns a list of pokemon characters
  */
 
-
 app.get('/pokemon', (req, res) => {
     res.render('pokemon/Index', {
        pokemon: pokemon 
     });
 })
-
 
 // the GET Route
 /**
